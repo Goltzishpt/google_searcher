@@ -1,9 +1,17 @@
+from typing import List, Dict, Any
+from dataclasses import dataclass
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
+@dataclass
+class SearchResult:
+    header: str
+    url: str
+
+
 class GoogleScraper:
-    def __init__(self, driver_path: str, browser):
+    def __init__(self, driver_path: str, browser: str):
         self.driver_path = driver_path
         if browser == 'chrome':
             self.browser = webdriver.Chrome(executable_path=self.driver_path)
@@ -19,7 +27,7 @@ class GoogleScraper:
         if self.browser is not None:
             self.browser.quit()
 
-    def scrape(self, query: str):
+    def scrape(self, query: str) -> list[dict[str, Any]]:
         search_box = self.browser.find_element(By.NAME, 'q')
         search_box.send_keys(query)
         search_box.submit()
