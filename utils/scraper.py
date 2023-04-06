@@ -8,7 +8,6 @@ class GoogleScraper:
         if browser == 'chrome':
             self.browser = webdriver.Chrome(executable_path=self.driver_path)
         elif browser == 'firefox':
-
             self.browser = webdriver.Firefox(executable_path=self.driver_path)
         else:
             raise ValueError(f'Invalid browser specified: {browser}')
