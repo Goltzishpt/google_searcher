@@ -1,13 +1,7 @@
 from typing import List, Dict, Any
-from dataclasses import dataclass
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
-
-@dataclass
-class SearchResult:
-    header: str
-    url: str
 
 
 class GoogleScraper:
