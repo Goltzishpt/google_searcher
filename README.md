@@ -3,7 +3,7 @@ This is a simple Python project that scrapes Google search results using Seleniu
 
 ## Installation
 - Clone the repository: git clone https://github.com/Goltzishpt/google_searcher
-- Navigate to the project directory: cd google-scraper
+- Navigate to the project directory: cd google_searcher
 - Install the required dependencies: pip install -r requirements.txt
 
 ## Usage
