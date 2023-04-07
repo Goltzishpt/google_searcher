@@ -2,13 +2,22 @@
 This is a simple Python project that scrapes Google search results using Selenium.
 
 ## Installation
-- Clone the repository: git clone https://github.com/Goltzishpt/google_searcher
-- Navigate to the project directory: cd google_searcher
+- Clone the repository: 
+``` Copy code
+git clone https://github.com/Goltzishpt/google_searcher
+```
+- Navigate to the project directory: 
+``` bash Copy code
+cd google_searcher
+```
 - Install the required dependencies: pip install -r requirements.txt
 
 ## Usage
-- Open config/settings.py and set the desired search query and browser options.
-- Run main.py to start the scraper.
+- Open config/settings.py and set the desired search query and browser options. 
+``` arduino Copy code
+python main.py
+```
+to start the scraper.
 - The results will be printed to the console.
 
 ## Configuration
