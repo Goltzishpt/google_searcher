@@ -10,7 +10,10 @@ git clone https://github.com/Goltzishpt/google_searcher
 ``` bash Copy code
 cd google_searcher
 ```
-- Install the required dependencies: pip install -r requirements.txt
+- Install the required dependencies: 
+``` bash Copy code
+pip install -r requirements.txt
+```
 
 ## Usage
 - Open config/settings.py and set the desired search query and browser options. 
